@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(250, 250, 250);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    margin: auto;
+    width: 50%;
+}
+h1 {
+    color: #3c24f3;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(192, 42, 42);
+}
+

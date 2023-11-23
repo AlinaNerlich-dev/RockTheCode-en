@@ -1,0 +1,28 @@
+.container {
+  background-color: blueviolet;
+  font-size: 2em;
+}
+
+/* when viewport is AT LEAST 500px, apply these rules */
+/* @media screen and (min-width: 500px) {
+  .container {
+    background-color: burlywood;
+    font-size: 1em;
+  }
+} */
+
+/* when viewport is NO BIGGER than this, apply these: */
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .container {
+    background-color: blue;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .container {
+    background-color: chartreuse;
+  }
+  body {
+    background-color: black;
+  }
+}

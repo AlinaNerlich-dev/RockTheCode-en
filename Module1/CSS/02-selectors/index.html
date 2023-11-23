@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+    <h2>universal selector</h2>
+    <p>
+      <span class="warning">Lorem ipsum</span> dolor, sit amet
+      <span id="highlighted">consectetur</span>
+      adipisicing elit. Quae cupiditate doloribus doloremque nihil facilis
+      recusandae, nobis possimus tempore! Ex, sint.
+    </p>
+    <hr />
+    <h2>Attribute Selectors</h2>
+    <a href="http://google.com" title="a link to google">Google</a>
+    <a href="http://bing.com" title="a link to bing">Bing</a>
+    <hr />
+    <h2>Descendant combinator</h2>
+    <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, qui
+      eligendi quae ab sequi ex molestias vel neque distinctio nulla?
+      <blockquote>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A, fugit?
+      </blockquote>
+    </div>
+    <ul>
+      <li>
+        <div>TOPIC 1</div>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+        </ul>
+      </li>
+    </ul>
+    <hr />
+    <h2>Child Combinator</h2>
+    <section class="child-example">
+      <article>
+        This is an article (ARTICLE 1) that is a direct child of the section
+        element with a classname of "child-example"
+        <article>This is Article 2</article>
+      </article>
+    </section>
+    <article>ARTICLE 3</article>
+    <hr />
+    <h2>Adjacent sibling combinator</h2>
+    <div>
+      <button>SIBLING 1</button>
+      <!-- <img src="test.jpg" alt="" /> -->
+      <span>SIBLING 2</span>
+    </div>
+    <hr />
+    <h2>General Sibling combinator</h2>
+    <div>
+      <img src="test.jpg" alt="test.jpg doesnt exist" />
+      <span>Lorem ipsum</span>
+      <button>Button</button>
+    </div>
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+  </body>
+</html>

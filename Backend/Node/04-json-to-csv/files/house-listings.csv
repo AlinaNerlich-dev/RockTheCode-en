@@ -1,0 +1,4 @@
+id,name,location,price,pictures,description,amenities
+"1","Cozy Cottage","123 Main Street, Cityville","200000","https://example.com/images/cottage1.jpg,https://example.com/images/cottage2.jpg","Charming cottage with a beautiful garden.","Garden,Fireplace,Patio",
+"2","Modern Condo","456 Elm Street, Townsville","350000","https://example.com/images/condo1.jpg,https://example.com/images/condo2.jpg,https://example.com/images/condo3.jpg","Stylish condo in a prime location.","Swimming Pool,Gym,Balcony,Security System",
+"3","Spacious Villa","789 Oak Street, Villatown","800000","https://example.com/images/villa1.jpg,https://example.com/images/villa2.jpg,https://example.com/images/villa3.jpg,https://example.com/images/villa4.jpg","Luxurious villa with ample space and stunning views.","Private Pool,Garden,Home Theater,Tennis Court",

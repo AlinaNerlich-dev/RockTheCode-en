@@ -1,0 +1,75 @@
+/* :root - root element (<html>) */
+/* 
+:root {
+    font-size: 16px;
+} */
+
+/* :empty selects any element without content */
+/* li:empty {
+    border: 4px solid rgb(254, 97, 123);
+} */
+
+/* selects element with no siblings */
+/* span:only-child {
+    border: 4px solid rgb(254, 97, 123);
+} */
+
+/* first-child/last-child: grab first or last child of a parent element */
+/* li:last-child {
+    border: 4px solid rgb(254, 97, 123);   
+} */
+
+/* :first-of-type/last-of-type - grab first/last descendant of the parent that matches a type */
+/* li:last-of-type, li:first-of-type {
+    border: 4px solid rgb(254, 97, 123);
+} */
+
+/* nth-of-type : select the nth element of a parent of a specified type */
+/* li:nth-of-type(even) {
+    color: red;
+    background-color: black;
+} */
+/* li:nth-of-type(3n+2) {
+    color: green;
+    background-color: black;
+}
+li:nth-of-type(3n+3) {
+    color: blue;
+    background-color: black;
+} */
+/* :not select will select any element NOT matching the criteria */
+/* li:not(.list-item) {
+    color:crimson
+} */
+
+a:link {
+    color:mediumturquoise
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: green;
+}
+a:visited {
+    color: blue;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    border: none; 
+    padding: 6px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px 0 rgba(0,0,0,.7);
+}
+
+button:hover {
+    background-color: cyan;
+    color: black;
+    box-shadow: 0px 5px 3px 0 rgba(0,0,0,.1);
+}
+
+button:active {
+    background-color: blue;
+}

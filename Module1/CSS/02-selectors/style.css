@@ -1,0 +1,72 @@
+/* UNIVERSAL SELECTOR */
+/* select all elements */
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+/* TYPE SELECTOR */
+/* selects only a specific kind/type of element */
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: skyblue;
+}
+/* CLASS SELECTOR */
+/* select only elements with a given class, regardless of element type */
+.warning {
+    color: red
+} 
+/* ID SELECTOR */
+/* selects only elements with a given ID, regardless of element type */
+#highlighted {
+    background-color: yellow;
+    text-decoration: underline;
+}
+/* ATTRIBUTE SELECTOR */
+/* select elements based on their attributes */
+a[title] {
+    color: cyan;
+}
+a[href="http://bing.com"] {
+    color: orange;
+}
+/* DESCENDANT COMBINATOR/SELECTOR */
+/* matches elements which match the second selector 
+and are children of elements that match the first selector 
+(with any distance between) */
+div blockquote {
+    background-color: antiquewhite;
+    font-size: italic;
+    color:red
+}
+li {
+    list-style-type: upper-roman;
+}
+li li {
+    list-style-type: lower-greek;
+}
+/* CHILD COMBINATORS/SELECTOR */
+/* matches the second element if it is the IMMEDIATE child of the first */
+/* this initial type selector prohibits inheritance */
+article {
+    background-color: white;
+    color: black;
+}
+section.child-example > article {
+    background-color: blue;
+    color: white;
+}
+/* ADJACENT SIBLING COMBINATOR/SELECTOR */
+/* matches an element immediately following another (siblings), 
+but only if they share the same parent. */
+button + span  {
+    text-decoration: line-through;
+}
+/* GENERAL SIBLING COMBINATOR */
+/* similar to adjacent, but the second selector does NOT have to immediate follow the other. 
+they need to be children of the same element */
+img ~ button {
+    background-color: orange;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer
+}

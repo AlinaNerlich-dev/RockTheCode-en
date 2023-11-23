@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a href="#about" class="logo">
+        <span role="img">👨‍💻</span>
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <section id="about">
+        <!-- about container -->
+        <div class="about-container">
+          <!-- image container -->
+          <div class="image-container">
+            <img src="/assets/goldengate-photo.png" alt="Selfie" />
+            <h2>Let me introduce <span>myself</span></h2>
+          </div>
+          <!-- text container -->
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+              sint hic ad facere odit molestiae doloremque vitae aut eaque, sed
+              earum sapiente accusantium quia corrupti recusandae maxime laborum
+              eveniet iure. Reprehenderit, deserunt cumque facere tenetur sunt
+              explicabo hic totam tempore maxime voluptas earum minus quidem
+              dolor unde! Id, tempore quo!
+            </p>
+
+            <ul>
+              <li><p>Mark Bodenchak</p></li>
+              <li><p>FullStack Developer</p></li>
+              <li><a href="http://www.thepowermba.com">The Power MBA</a></li>
+              <li>
+                <a href="mailto:youremailaddress@website.com"
+                  >Send me a <span role="img">📧</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- SKILLS SECTION -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <label for="filter"><span role="img">🔎</span></label>
+        <input
+          type="text"
+          name="filter"
+          id="filter"
+          onkeyup="filterSkills()"
+          placeholder="Search skills or pcts"
+        />
+        <ul class="skills-list" id="skills-list">
+          <li>
+            <p><strong>90%</strong> HTML5 <span role="img">📑</span></p>
+          </li>
+          <li>
+            <p><strong>85%</strong> CSS3 <span role="img">🎨</span></p>
+          </li>
+          <li>
+            <p><strong>90%</strong> JAVASCRIPT ES6<span role="img">🧙</span></p>
+          </li>
+          <li>
+            <p><strong>80%</strong> NODEJS<span role="img">⚙</span></p>
+          </li>
+          <li>
+            <p><strong>90%</strong> REACT<span role="img">⚛</span></p>
+          </li>
+          <li>
+            <p><strong>80%</strong> MONGODB<span role="img">💾</span></p>
+          </li>
+          <li>
+            <p><strong>80%</strong> SQL<span role="img">💾</span></p>
+          </li>
+          <li>
+            <p><strong>90%</strong> TESTING<span role="img">🧪</span></p>
+          </li>
+          <li>
+            <p><strong>20%</strong> FIGMA<span role="img">📐</span></p>
+          </li>
+        </ul>
+      </section>
+      <!-- CONTACT -->
+      <section class="contact-container" id="contact">
+        <h2>Contact</h2>
+        <div>
+          <a class="cta" href="mailto:youremailaddress@website.com">Hire Me</a>
+          <a class="cta" href="/assets/cv-sample.pdf" download="cv"
+            >Download CV</a
+          >
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <p>Created By Mark bodenchak with <span role="img">💕</span></p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

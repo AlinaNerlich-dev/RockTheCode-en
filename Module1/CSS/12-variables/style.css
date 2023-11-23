@@ -1,0 +1,79 @@
+:root {
+    /* THEME 1 */
+    
+    --bgColor: #e5e5e5; 
+    --buttonColor: rgb(50,50,200);
+    --buttonColorText: #fff;
+    --buttonColorHover: rgb(40,110,255);
+    --buttonColorHoverText: #fff;
+    --buttonColorActive: rgb(145,210,255);
+    --buttonColorActiveText: #fff;
+   
+
+    /* THEME 2 */
+    /* --bgColor: rgb(50,50,200);
+    --buttonColor: rgb(217,217,217);
+    --buttonColorText: rgb(25,25,25);
+    --buttonColorHover: rgb(255,255,255);
+    --buttonColorHoverText: rgb(25,25,25);
+    --buttonColorActive: rgb(255,220,0);
+    --buttonColorActiveText: rgb(25,25,25); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-color: var(--bgColor);
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    margin: 2px;
+    padding: 4px 10px;
+    border: none;
+    background-color: var(--buttonColor);
+    color: var(--buttonColorText);
+    text-transform: lowercase;
+    border-radius: 4px;
+    width: 8em;
+}
+
+button:hover {
+    background-color: var(--buttonColorHover);
+    color: var(--buttonColorActiveText);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: var(--buttonColorActive);
+    color: var(--buttonColorHoverText);
+}

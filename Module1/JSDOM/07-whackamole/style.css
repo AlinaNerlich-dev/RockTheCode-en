@@ -1,0 +1,29 @@
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  max-width: 600px;
+}
+
+.game-button {
+  font-size: 3em;
+  aspect-ratio: 1;
+  max-width: 200px;
+  cursor: pointer;
+  /* border-radius: 50%; */
+  /* background-color: black; */
+}
+
+.game-button > span {
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.show > span {
+  opacity: 1;
+}
+
+.not-clickable {
+  pointer-events: none;
+}

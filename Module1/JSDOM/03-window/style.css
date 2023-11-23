@@ -1,0 +1,11 @@
+.square {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: bisque;
+}
+
+body {
+  height: 2500px;
+  width: 1000px;
+}

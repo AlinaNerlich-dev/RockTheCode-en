@@ -1,0 +1,21 @@
+{
+  "name": "deploy-express-flyio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node .",
+    "build": "echo 'npm build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jest": "^29.6.3"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.4.7"
+  }
+}

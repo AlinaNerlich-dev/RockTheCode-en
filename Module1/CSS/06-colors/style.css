@@ -1,0 +1,61 @@
+/* COLORS NAMES:
+1. predefined colors 
+2. hard to remember */
+h1 {
+    color: darkblue;
+}
+
+/* HEXADECIMAL code represents color with 6 digit code.
+these represent red, green, blue 
+syntax: #RRGGBB
+RR-GG-BB
+
+10 becomes A
+11 becomes B
+12 becomes C
+13 becomes D
+14 becomes E
+15 becomes F
+
+*/
+h2 {
+    color: #e20808
+}
+
+/* RGB channels - express values for red, green, and blue
+using the numbers 0 - 250  */
+/* p {
+    color: rgb(27, 28, 26)
+} */
+
+/* HUE - "color"  */
+/* Saturation - how much gray is in a color
+ 0 - IS gray, maximum saturation has NO gray */
+ /* Brightness (value) - refers to how much black a color has. 0 = black */
+ /*  contrast - difference between foreground and background */
+ 
+ .lowcontrast {
+    color: #ffffff;
+    background-color: rgb(190, 190, 190);
+ }
+ .mediumcontrast {
+    color: #dbdbdb;
+    background-color: #303030;
+ }
+
+ .highcontrast {
+    background-color: black;
+    color: white;
+    line-height: 2;
+ }
+
+ /* opacity - transparency number 0 - 1. rgba - A for alpha */
+ .alpha {
+    background-color: rgba(250, 20, 250, .5);
+ }
+
+ /* HSL notation - hue, saturation, lightness 
+ lightness - like brightness, includes whiteness as well */
+ .HSL {
+    background-color: hsla(270, 30%, 70%, .8 );
+ }

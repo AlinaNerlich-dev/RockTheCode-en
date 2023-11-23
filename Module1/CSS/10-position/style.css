@@ -1,0 +1,38 @@
+h1 {
+    border: 1px solid black;
+}
+p {
+    width: 400px;
+    border: 1px solid black;
+}
+.container {
+    width: 75%;
+    border: 1px solid black;
+    background-color: #ccc;
+    position:absolute;
+    height: 500px;
+}
+.para1 {
+    background-color: #ea2020;
+    /* relative positioning - relative to its original location */
+float: right;
+}
+.para2 {
+    background-color: #91fa11;
+    /* abs. position - relative to the nearest positioned ancestor.  */
+    position: relative;
+    float: right;
+    
+    
+}
+.para3 {
+    background-color: #1832f4;
+    /* fixed position: relative to browser window */
+    position: relative;
+    float: right;
+}
+
+blockquote {
+    float: left;
+    width: 25%;
+}

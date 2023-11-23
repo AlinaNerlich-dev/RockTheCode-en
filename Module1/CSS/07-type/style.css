@@ -1,0 +1,33 @@
+.serif {
+    font-size: 1.2em;
+    text-transform: lowercase;
+}
+
+.sans-serif {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-decoration:underline;
+}
+.monospace {
+    font-family: 'Courier New', Courier, monospace;
+    font-style:oblique;
+}
+
+.cursive {
+    font-family: 'Satisfy', cursive;
+}
+
+.paragraph {
+    line-height: 1em;
+    /* letter-spacing: .08em; */
+    /* word-spacing: .8em; */
+    /* text-transform: uppercase; */
+    text-align: left;
+}
+
+.span1 {
+  
+    vertical-align: top;
+    text-shadow: 5px 2px 1px rgba(0,250,0,1);
+} 
+

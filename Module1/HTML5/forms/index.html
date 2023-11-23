@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Student Survey Form</h1>
+      <form>
+        <fieldset>
+          <legend><h4>Please Provide Your Information:</h4></legend>
+          <label for="firstname">First Name:</label>
+          <input type="text" id="firstname" /><br /><br />
+          <label for="lastname">Last Name:</label>
+          <input type="text" id="lastname" /><br /><br />
+          <label for="age">Age:</label>
+          <input type="number" id="age" min="18" placeholder="18" value="21" />
+          <!-- label's for attr should match the input's id attr. -->
+        </fieldset>
+        <fieldset>
+          <legend><h4>What system are you using?</h4></legend>
+          <label for="IOS">IOS</label>
+          <input type="radio" id="IOS" name="system" />
+          <label for="Windows">Windows</label>
+          <input type="radio" id="windows" name="system" />
+          <label for="Linux">Linux</label>
+          <input type="radio" id="Linux" name="system" />
+        </fieldset>
+        <fieldset>
+          <legend>
+            <h4>What was your experience level before taking the course?</h4>
+          </legend>
+          <select name="experience" id="experience">
+            <option value="none" selected>None</option>
+            <option value="beginner">beginner</option>
+            <option value="intermediate">intermediate</option>
+            <option value="advanced">advanced</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend><h4>Please select all that you learned:</h4></legend>
+          <input type="checkbox" id="text" value="Text" />
+          <label for="text">Text</label>
+          <br />
+          <input type="checkbox" id="grouping" value="grouping" />
+          <label for="grouping">Grouping</label>
+          <br />
+          <input type="checkbox" id="Lists" value="lists" />
+          <label for="lists">lists</label>
+          <br />
+          <input type="checkbox" id="tables" value="tables" />
+          <label for="tables">tables</label>
+          <br />
+          <input type="checkbox" id="attributes" value="attributes" />
+          <label for="attributes">attributes</label>
+          <br />
+          <input type="checkbox" id="Links" value="Links" />
+          <label for="Links">Links</label>
+          <br />
+          <input type="checkbox" id="images" value="images" />
+          <label for="images">images</label>
+          <br />
+          <input type="checkbox" id="media" value="media" />
+          <label for="media">Audio and Video</label>
+          <br />
+          <input type="checkbox" id="iframes" value="iframes" />
+          <label for="iframes">iframes</label>
+          <br />
+          <input type="checkbox" id="forms" value="forms" />
+          <label for="forms">forms</label>
+          <br />
+        </fieldset>
+        <fieldset>
+          <legend><h4>How do you take notes during lessons?</h4></legend>
+          <input
+            type="text"
+            placeholder="Notion"
+            name="notes"
+            id="notes"
+            list="noteapps"
+          />
+          <datalist id="noteapps">
+            <option value="Notion"></option>
+            <option value="Evernote"></option>
+            <option value="OneNote"></option>
+            <option value="I don't take notes"></option>
+          </datalist>
+        </fieldset>
+        <fieldset>
+          <legend><h4>Comments:</h4></legend>
+          <textarea
+            name="comments"
+            id=""
+            cols="30"
+            rows="10"
+            style="width: 100%"
+          ></textarea>
+        </fieldset>
+        <fieldset class="submit-container">
+          <legend><h4>Submit</h4></legend>
+          <input type="submit" />
+          <input type="reset" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

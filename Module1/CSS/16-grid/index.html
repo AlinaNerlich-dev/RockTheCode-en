@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>TravelGo</title>
+  </head>
+  <body>
+    <h1 class="mobile-company">TravelGo</h1>
+    <div class="container">
+      <!-- nav bar -->
+      <nav>
+        <ul class="main-nav">
+          <li><a href="">Home</a></li>
+          <li><a href="">Packages</a></li>
+          <li><a href="">Our Team</a></li>
+          <li><a href="">Contact</a></li>
+          <li class="right-nav"><a href="">Login</a></li>
+        </ul>
+      </nav>
+      <!-- hero section -->
+      <header>
+        <h1 class="company">TravelGo</h1>
+        <h2 class="slogan">Your Next Destination Awaits.</h2>
+      </header>
+      <!-- aside -->
+      <aside>
+        <form action="">
+          <h3>Start Your Search Here:</h3>
+          <p>
+            <label for="vacation_type">Type:</label><br />
+            <select name="vacation_type" id="vacation_type">
+              <option value="Vacation">Vacation</option>
+              <option value="Cruise">Cruise</option>
+              <option value="Guided Tour">Guided Tour</option>
+              <option value="Events & Shows">Events & Shows</option>
+              <option value="Theme Parks">Theme Parks</option>
+            </select>
+          </p>
+          <p>
+            <label for="price">Price:</label>
+            <input type="range" min="100" max="5000" />
+          </p>
+
+          <span>Interests:</span>
+          <ul>
+            <li>
+              <input type="checkbox" id="adventure" />
+              <label for="adventure"><small>Adventure</small></label>
+            </li>
+            <li>
+              <input type="checkbox" id="Beach" />
+              <label for="Beach"><small>Beach</small></label>
+            </li>
+            <li>
+              <input type="checkbox" id="Family-Friendly" />
+              <label for="Family-Friendly"
+                ><small>Family-Friendly</small></label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="Solo-Travel" />
+              <label for="Solo-Travel"><small>Solo-Travel</small></label>
+            </li>
+            <li>
+              <input type="checkbox" id="All-Inclusive" />
+              <label for="All-Inclusive"><small>All-Inclusive</small></label>
+            </li>
+            <li>
+              <input type="checkbox" id="Relax" />
+              <label for="Relax"><small>Relax</small></label>
+            </li>
+            <li>
+              <input type="checkbox" id="Outdoors" />
+              <label for="Outdoors"><small>Outdoors</small></label>
+            </li>
+          </ul>
+        </form>
+      </aside>
+      <!-- main -->
+      <main>
+        <h3>Choose among our popular destinations!</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
+          pariatur itaque sunt porro iusto nobis hic harum ipsam, laborum velit
+          tenetur libero, ea deleniti suscipit dicta tempora, quidem praesentium
+          voluptatum?
+        </p>
+        <!-- flex container -->
+        <div class="flex-container">
+          <!-- card1 -->
+          <div class="location-card">
+            <div class="location-card--img_container">
+              <h3 class="location-card--title">Italy</h3>
+              <img
+                src="images/florence-duomo.jpg"
+                alt=""
+                class="location-card--img"
+              />
+            </div>
+            <div class="location-card--body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                itaque vel quis libero veniam nam incidunt rerum architecto hic
+                sed.
+              </p>
+            </div>
+            <div class="location-card--footer"><button>Book</button></div>
+          </div>
+          <!-- card2 -->
+          <div class="location-card">
+            <div class="location-card--img_container">
+              <h3 class="location-card--title">Italy</h3>
+              <img
+                src="images/costarica.jpg"
+                alt=""
+                class="location-card--img"
+              />
+            </div>
+            <div class="location-card--body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                itaque vel quis libero veniam nam incidunt rerum architecto hic
+                sed.
+              </p>
+            </div>
+            <div class="location-card--footer"><button>Book</button></div>
+          </div>
+          <!-- card3 -->
+          <div class="location-card">
+            <div class="location-card--img_container">
+              <h3 class="location-card--title">Italy</h3>
+              <img
+                src="images/greece-oia.jpg"
+                alt=""
+                class="location-card--img"
+              />
+            </div>
+            <div class="location-card--body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                itaque vel quis libero veniam nam incidunt rerum architecto hic
+                sed.
+              </p>
+            </div>
+            <div class="location-card--footer"><button>Book</button></div>
+          </div>
+          <!-- card3 -->
+          <div class="location-card">
+            <div class="location-card--img_container">
+              <h3 class="location-card--title">Italy</h3>
+              <img
+                src="images/japan-mtfuji.jpg"
+                alt=""
+                class="location-card--img"
+              />
+            </div>
+            <div class="location-card--body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                itaque vel quis libero veniam nam incidunt rerum architecto hic
+                sed.
+              </p>
+            </div>
+            <div class="location-card--footer"><button>Book</button></div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <ul>
+          <li><a href="#">Site Map</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Affiliates</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Accessability</a></li>
+          <li><a href="#">Legal</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

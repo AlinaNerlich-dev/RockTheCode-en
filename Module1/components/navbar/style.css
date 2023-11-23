@@ -1,0 +1,115 @@
+:root {
+  --primary-color: rgb(36, 36, 36);
+  --secondary-color: rgba(255, 255, 255, 0.87);
+  --navbar-height: 50px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--secondary-color);
+  padding: 0.25rem 1rem;
+  position: relative;
+  height: var(--navbar-height);
+}
+
+.navbar button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  /* border-radius: 50%;
+  border: none;
+  aspect-ratio: 1; */
+}
+
+.navbar a,
+.navbar button {
+  font-size: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.navbar ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.navbar ul > li::before {
+  content: "📑";
+}
+
+.navbar h3 {
+  margin: 0;
+}
+
+.menu-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: var(--navbar-height);
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  padding: 1rem 0;
+  opacity: 0;
+}
+
+.menu-content--open {
+  opacity: 1;
+  min-height: calc(100vh - var(--navbar-height));
+}
+
+.menu-content > .favorites,
+.menu-content > .search {
+  padding: 0.5rem;
+}
+
+.favorites {
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.search {
+  flex: 1;
+  border: none;
+}
+
+.search > input {
+  font-size: 100%;
+  max-width: 20rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+  .menu-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .favorites {
+    border-bottom: none;
+  }
+  .search {
+    border-left: 1px solid var(--secondary-color);
+  }
+}

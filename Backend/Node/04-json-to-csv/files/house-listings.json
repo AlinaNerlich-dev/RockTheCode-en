@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "name": "Cozy Cottage",
+    "location": "123 Main Street, Cityville",
+    "price": 200000,
+    "pictures": [
+      "https://example.com/images/cottage1.jpg",
+      "https://example.com/images/cottage2.jpg"
+    ],
+    "description": "Charming cottage with a beautiful garden.",
+    "amenities": ["Garden", "Fireplace", "Patio"]
+  },
+  {
+    "id": 2,
+    "name": "Modern Condo",
+    "location": "456 Elm Street, Townsville",
+    "price": 350000,
+    "pictures": [
+      "https://example.com/images/condo1.jpg",
+      "https://example.com/images/condo2.jpg",
+      "https://example.com/images/condo3.jpg"
+    ],
+    "description": "Stylish condo in a prime location.",
+    "amenities": ["Swimming Pool", "Gym", "Balcony", "Security System"]
+  },
+  {
+    "id": 3,
+    "name": "Spacious Villa",
+    "location": "789 Oak Street, Villatown",
+    "price": 800000,
+    "pictures": [
+      "https://example.com/images/villa1.jpg",
+      "https://example.com/images/villa2.jpg",
+      "https://example.com/images/villa3.jpg",
+      "https://example.com/images/villa4.jpg"
+    ],
+    "description": "Luxurious villa with ample space and stunning views.",
+    "amenities": ["Private Pool", "Garden", "Home Theater", "Tennis Court"]
+  }
+]

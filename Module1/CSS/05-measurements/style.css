@@ -1,0 +1,41 @@
+/* div {
+    border: 12px solid black;
+    height: 100px;
+    width: 800px;
+} */
+
+/* .padding {
+    border: 1px solid black;
+    font-size: 32px;
+    padding: 1.2em; CALCULATED VAL: 19.2px. - takes the current font-size, and multiplies by the value for em 
+} */
+
+.msg {
+    /* inherits the font size from parent element (<body>) */
+    font-size: 1.2em;
+    background-color: #aaa;
+    padding: 1.2em;
+}
+
+li {
+    font-size: .7em;
+}
+
+/* :root {
+    font-size: 10px;
+} */
+html {
+    font-size: 20px;
+}
+.usingRems {
+    font-size: 2rem;
+}
+
+.parentDiv {
+    width: 80%;
+    border: 1px solid black;
+}
+.viewport {
+    background-color: blueviolet;
+    width: 50%;
+}

@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --blueHue: rgb(45, 85, 245);
+}
+
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  color: #333333;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto max(400px) auto 100px;
+  grid-gap: 1em;
+}
+nav,
+header,
+footer {
+  grid-column: span 2;
+  grid-row: span 1;
+  border-bottom: 1px solid #ccc;
+}
+
+/* MAIN NAV STYLES */
+.main-nav {
+  display: flex;
+  padding: 0.5em;
+  list-style-type: none;
+}
+
+.main-nav > li + li {
+  margin-left: 2em;
+}
+
+.main-nav > li > a {
+  text-decoration: none;
+  color: rgb(90, 100, 100);
+  padding: 0.5em 1em;
+}
+
+.main-nav > li > a:hover {
+  background-color: rgb(235, 235, 235);
+  color: var(--blueHue);
+  border-radius: 0.5em;
+}
+
+.main-nav > li > a:active {
+  color: rgb(235, 235, 235);
+  background-color: var(--blueHue);
+}
+
+.main-nav > .right-nav {
+  margin-left: auto;
+}
+
+/* HEADER/HERO SECTION STYLES */
+header {
+  background-image: url("./images/balloons.jpg");
+  background-size: 100%;
+  position: relative;
+  user-select: none;
+  font-style: italic;
+}
+.company {
+  text-align: center;
+  color: var(--blueHue);
+  font-size: 3em;
+  font-family: "DynaPuff", sans-serif;
+  position: relative;
+  top: 1.2em;
+}
+
+.slogan {
+  position: absolute;
+  bottom: 0;
+  right: 1em;
+  color: #fff;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6);
+}
+
+/* ASIDE STYLES */
+aside {
+  grid-column: span 1;
+}
+
+aside > form > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+/* MAIN STYLES */
+main {
+  grid-column: span 1;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 2em;
+  column-gap: 2em;
+}
+
+/* location card */
+.location-card {
+  height: 350px;
+  width: 300px;
+  /* border: 1px solid #ccc; */
+  border-radius: 0.37em;
+  padding: 1em 1em 0.8em;
+  box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.location-card--title {
+  text-align: center;
+  background-color: #000;
+  border-radius: 3px;
+  padding: 0.3em;
+  margin-top: 0;
+  color: white;
+}
+
+.location-card--img_container {
+  position: relative;
+  margin-bottom: 2em;
+  flex-basis: 50%;
+}
+
+.location-card--img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.location-card--body {
+  flex-basis: 40%;
+}
+
+.location-card--footer {
+  text-align: right;
+  flex-basis: 10%;
+}
+
+.location-card--footer > button {
+  padding: 0.5em 2em;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--blueHue);
+  color: white;
+  font-weight: bold;
+}
+
+.location-card--footer > button:hover {
+  background-color: rgb(91, 123, 250);
+  cursor: pointer;
+}
+/* FOOTER STYLES */
+footer {
+  padding: 1em;
+}
+
+footer > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  column-gap: 1em;
+  row-gap: 1em;
+}
+
+footer > ul > li > a {
+  color: rgb(90, 100, 100);
+  padding: 0.5em 0.1em;
+  text-decoration: none;
+}
+
+footer > ul > li > a:hover {
+  color: var(--blueHue);
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-rows: auto max(300px) auto auto 100px;
+  }
+  aside,
+  main {
+    grid-column: span 2;
+    padding: 0 2em;
+  }
+  aside > form > ul {
+    flex-direction: row;
+    padding: 0;
+    column-gap: 1em;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 510px) {
+  .mobile-company {
+    display: none;
+  }
+}
+@media (max-width: 510px) {
+  .container {
+    grid-template-rows: auto max(300px) auto auto 100px;
+  }
+  header {
+    display: none;
+  }
+  .mobile-company {
+    color: var(--blueHue);
+    font-family: "DynaPuff", sans-serif;
+    margin-left: 1em;
+  }
+  .main-nav {
+    flex-direction: column;
+  }
+
+  .main-nav > :first-child,
+  .main-nav > li + li,
+  .main-nav > .right-nav {
+    margin-left: 0;
+    padding: 0.5em;
+  }
+}
