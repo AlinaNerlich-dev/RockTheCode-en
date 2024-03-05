@@ -3,9 +3,7 @@ import { useNavigate } from "react-router-dom";
 const AppBar = ({ pages }) => {
   const navigate = useNavigate();
 
-  const handleNavigate = (path) => {
-    if (path) navigate(path);
-  };
+
   return (
     <>
       <header>
@@ -13,7 +11,7 @@ const AppBar = ({ pages }) => {
       </header>
       <nav>
         {pages?.map((page) => (
-          <button key={page.label} onClick={() => handleNavigate(page.path)}>
+          <button key={page.label} onClick={() => navigate(page.path)}>
             {page.label}
           </button>
         ))}

@@ -37,3 +37,4 @@ export const getHero = (id) => heroes.find((hero) => hero.id.toString() === id);
 
 export const deleteHero = async (id) =>
   (heroes = heroes.filter((hero) => hero.id !== id));
+  

@@ -12,12 +12,12 @@ const Fetch = () => {
         `https://pokeapi.co/api/v2/pokemon/${filter}`
       );
       const pokemonJson = await pokemon.json();
-      return {
+      return ({
         ...pokemonJson,
         name: pokemonJson.name,
         id: pokemonJson.id,
-        image: pokemonJson.sprites.front_default,
-      };
+        img: pokemonJson.sprites.front_default,
+  });
     };
     getPokemonFiltered().then((pokemon) => setPokemon([pokemon]));
   }, [debouncedFilter]);
@@ -35,7 +35,7 @@ const Fetch = () => {
         {pokemon.map((p) => (
           <div key={p.id}>
             <h1>{p.name}</h1>
-            <img src={p.image} alt={p.name} />
+            <img src={p.img} alt={p.name} />
           </div>
         ))}
       </div>

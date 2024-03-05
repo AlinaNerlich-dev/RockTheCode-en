@@ -4,7 +4,8 @@ const UseRefFocus = () => {
   const focusInputRef = useRef();
 
   useEffect(() => {
-    if (focusInputRef.current) {
+    if (focusInputRef) {
+      console.log(focusInputRef.current)
       focusInputRef.current.focus();
     }
   }, []);
